@@ -61,8 +61,8 @@ sort <file to be sorted>
 //Sort file and save
 sort <file to be sorted> >> <New file name>
 
+//Grep search words in file
 grep(golbal regular expression print)
-
 grep <Word to search> <file to be searched>
 grep -i <Case sensitive word to search> <file to be searched>
 
