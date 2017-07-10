@@ -86,3 +86,7 @@ git log(chronological commits)
 Ctrl+Alt+F2
 Login with credentials
 type reboot
+
+//How to install python requirements.txt
+sudo pip install -r requirements.txt
+
