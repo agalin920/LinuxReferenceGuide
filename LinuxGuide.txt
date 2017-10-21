@@ -79,6 +79,16 @@ git add <filename> (Add the file that is in the folder to the git)
 git diff <filename> (Lists and colors the differences/changes in a file)
 git commit -m <message for commit>(Permanently stores changes frin the staging area)
 git log(chronological commits)
+add -> commit ->push
+git remote add origin <githuburl.git>
+git push -u origin master //the -u saves the paramaters
+git push
+git pull //retrieve changes from origin master
+git checkout -- <filename> //reverts files to last commit
+git branch <branch name> //create new branch to do all your commits to before you push
+git checkout <branch name> //swaps your branch from your default master branch
+git merge <branch name> //merges the branch to your master branch *Be in master branch*
+git branch -d <branch name> // deletes the branch
 
 
 //How-To reboot your system if everything crashes
