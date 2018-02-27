@@ -1,42 +1,67 @@
-cd -optional file directory- (current directory) 
-cd .. (parent directory) 
-cd ~  (home directory) 
-cd -  (previous directory)
+//Change current directory
+cd  <directory> //Makes directory input the current directory 
+cd .. //Makes cd the parent directory 
+cd ~  //Make cd the home directory (can also be used without ~) 
+cd -  //Makes cd the previous directory
 
-pwd print working directory
+pwd //Prints working directory
 
-ls -optional file directory-(list directories)
-ls -l (more detailed list)
-ls- a (shows hidden directories (.file))
+//List content of directory
+ls <directory> //Lists the contents of the directory
+ls -l //Displays more detailed list
+ls- a //Shows hidden directories (.file)
+ls -la //Combination of both -l and -a
 
 //Directory Stack
 pushd <directory to go to> //Jumps to new directory by pushing into stack to later be popped to return to original directory
 popd //Returns you to directory
 
-touch -file creation destination-(creates a file)
+//Command History
+history //Returns the history of commands that have been used
 
-file <file> // Shows file type/extension
+//Search system for file
+locate <filename>
+updatedb //Update locate database
 
-cat (opens the file in the terminal)
+//File type
+file <file> // Returns file type/extension
 
-history(shows the history of commands)
+//Command Information
+man <command> //Displays full manual 
+whatis <command> //Returns short description
+apropos <Query> //Returns all commands that are related to the query
 
-clear (clears the terminal)
+//Create/Deleate Files
+touch <filename> //Creates a file
+rm <filename> //Deletes a file
+rm * //Wildcard
 
-cp filename -file copy destination- (copies a file)
+//Concatenate Command
+cat <filename> //Returns contents of file on terminal
+cat >> <Filename> //Allows you to add whatever you type to add into the file
+cat <file1> <file2> //Concatenates both files
+
+//Copy files/direcotires
+cp <file name> <Copy file name> //Copies a file into the current directory
 cp -r  directory/ -file copy destination-(copies a whole directory)
 
-mv oldfile newfile (renames file)
-mv file -file move directory-(moves a file to a directory; can move more than one at a time)
-mv -b (backups the file before a move or rename)
+//Move files (Rename File) (Insert contents from one file to another)
+mv <oldfile name> <newfile name> //Renames file since no directory was specified
+mv <filename> <file move directory> //Moves a file to a directory
+mv <filename> <exsisiting filename> //Moves the content of the first file into the existing file
+mv -b //Flag used to backup the file before a move or rename
 
-mkdir <directory name> (makes a directory)
-rmdir <directory name> (removes directory)
-rm -r <directory name> (delete directory and its contents)
+//Create/Remove Directories
+mkdir <directory name> //Creates a directory
+rmdir <directory name> //Removes directory
+rm -r <directory name> //Delete directory and its contents
 
-whatis <command> (shows the simple explination of the command)
+//Displaying processes
+top //shows top processes
 
-xkill (kills the window you click on)
+//Killing processes
+kill<processID> //Kills the process with specified ID
+xkill //kills the window you click on
 
 To fix harddrive
 
