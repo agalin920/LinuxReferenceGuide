@@ -15,7 +15,7 @@ popd //Returns you to directory
 
 touch -file creation destination-(creates a file)
 
-file (shows file type)
+file <file> // Shows file type/extension
 
 cat (opens the file in the terminal)
 
