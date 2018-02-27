@@ -9,6 +9,10 @@ ls -optional file directory-(list directories)
 ls -l (more detailed list)
 ls- a (shows hidden directories (.file))
 
+//Directory Stack
+pushd <directory to go to> //Jumps to new directory by pushing into stack to later be popped to return to original directory
+popd //Returns you to directory
+
 touch -file creation destination-(creates a file)
 
 file (shows file type)
