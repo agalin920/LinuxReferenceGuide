@@ -56,11 +56,17 @@ mkdir <directory name> //Creates a directory
 rmdir <directory name> //Removes directory
 rm -r <directory name> //Delete directory and its contents
 
+
+//File permissions
+chomd +x <filename> //Makes everybody have execute permission
+chmod 777 <filename>//First byte is for user, second is for group, third is for everybody (4-read,2-write,1-execute)
+
 //Displaying processes
 top //shows top processes
 
 //Killing processes
 kill<processID> //Kills the process with specified ID
+killall <process name> //Kills all process related to process name
 xkill //kills the window you click on
 
 To fix harddrive
